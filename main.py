@@ -59,7 +59,7 @@ time.sleep(5)
 cs2_pid = find_process_pid('cs2.exe')
 
 if cs2_pid:
-    set_process_priority(cs2_pid, 0x00000080)
+    set_process_priority(cs2_pid, 0x00000100)
 else:
     print(Fore.RED + "Fail : CS2 is not running.")
     input(Fore.RED + "Press any key to exit...")
